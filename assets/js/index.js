@@ -2,7 +2,7 @@
 // // Именование переменных A-Za-z, 0-9, _, $
 // // Нельзя использовать числа в начале и ключевые слова
 // // Однострочный комментарий
-// /* Многострочный 
+// /* Многострочный
 // комментарий*/
 
 // const colorRed = "#f00";
@@ -34,19 +34,50 @@
 // let nullValue = null;
 // console.log(typeof nullValue); //JS bug - object
 
-let input = prompt('Enter a number');
-let time = Number(input);
+// let input = prompt('Enter a number');
+// let time = Number(input);
 
-if (time > 0 && time <= 15) {
-    console.log('First quater of hour');
-} else if (time > 15 && time <=30) {
-    console.log('Second quater of hour');
-} else if (time > 30 && time <=45) {
-    console.log('Third quater of hour');
-} else if (time > 45 && time <= 60) {
-    console.log('Fourth quater of hour');
-} else if (time > 60 || time < 1) {
-    console.log('Enter number from 1 to 60!');
-}else {
-    console.log('Enter number from 1 to 60!');
+// if (time > 0 && time <= 15) {
+//     console.log('First quater of hour');
+// } else if (time > 15 && time <=30) {
+//     console.log('Second quater of hour');
+// } else if (time > 30 && time <=45) {
+//     console.log('Third quater of hour');
+// } else if (time > 45 && time <= 60) {
+//     console.log('Fourth quater of hour');
+// } else if (time > 60 || time < 1) {
+//     console.log('Enter number from 1 to 60!');
+// }else {
+//     console.log('Enter number from 1 to 60!');
+// }
+
+let number = Number(prompt("Enter a number"));
+
+let i = 0;
+for (i; i < number; i++) {
+    if (i > 1000) {
+        console.log('Please, stop!');
+        break;
+    }
+    console.log("#");
 }
+
+i = 0;
+while (i < number) {
+    if (i > 1000) {
+        console.log('Please, stop!');
+        break;
+    }
+    console.log("#");
+    i++;
+}
+
+i = 0;
+do {
+    if (i > 1000) {
+        console.log('Please, stop!');
+        break;
+    }
+    console.log("#");
+    i++;
+} while (i < number);
